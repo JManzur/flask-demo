@@ -49,7 +49,9 @@ And you will see something like this:
 
 ![App Screenshot](https://1.bp.blogspot.com/-FZfHhOgKacc/YMuy5wxc_7I/AAAAAAAAFkg/IsxfxuE7sNAC1PRhgt1OFeuCZBh5IBU8gCLcBGAsYHQ/w400-h395/flask-demo.png)
 
-## Test the 
+## Test the healthcheck status page
+
+In order to test the healthcheck status page, you can access http://127.0.0.1:5000/status in a browser or perform a curl like this:
 
 ```bash
   curl http://127.0.0.1:5000/status
@@ -62,6 +64,7 @@ And you will see something like this:
 ```
 
 ![App Screenshot](https://1.bp.blogspot.com/-GM2nkXXTSkY/YMu4IJoFQmI/AAAAAAAAFko/iS6AtNOx-YYmrNIFbzHasOCPZ3iNuxYwACLcBGAsYHQ/s16000/flask-demo-healthcheck.png)
+
 ## Build the Docker image 
 
 Form the project directory run:
