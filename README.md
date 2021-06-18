@@ -78,7 +78,7 @@ docker build -t flask-demo .
 After building the image if you wish to test it locally run the following command.
 
 ```bash
-docker build -t flask-demo-mp .
+docker run -d -p 5000:5000 --name DEMO {IMAGE_ID}
 ```
 
 ## Push to ECR
@@ -86,7 +86,7 @@ docker build -t flask-demo-mp .
 Tag the image. You can use a GUID generator for the tag.
 
 ```bash
-docker run -d -p 5000:5000 --name DEMO {IMAGE_ID}
+docker tags flask-demo-mps:latest YOUR_ECR_URL.ecr.us-east-1.amazonaws.com/prod/REGISTRY_NAME:GUID
 ```
 
 Link the AWS Account:
