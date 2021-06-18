@@ -15,7 +15,7 @@ The flask app also provided a healthcheck status page using the py-healthcheck p
 
 
 
-## Run Locally
+## Run App.py Locally
 
 Clone the project
 
@@ -70,6 +70,14 @@ In order to test the healthcheck status page, you can access http://127.0.0.1:50
 Form the project directory run:
 
 ```bash
+docker build -t flask-demo .
+```
+
+## Run the Docker image Locally
+
+After building the image if you wish to test it locally run the following command.
+
+```bash
 docker build -t flask-demo-mp .
 ```
 
@@ -78,7 +86,7 @@ docker build -t flask-demo-mp .
 Tag the image. You can use a GUID generator for the tag.
 
 ```bash
-docker tags flask-demo-mps:latest YOUR_ECR_URL.ecr.us-east-1.amazonaws.com/prod/REGISTRY_NAME:GUID
+docker run -d -p 5000:5000 --name DEMO {IMAGE_ID}
 ```
 
 Link the AWS Account:
