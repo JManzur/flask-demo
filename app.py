@@ -27,9 +27,9 @@ def demo_available():
 	code = urllib.request.urlopen("http://127.0.0.1:5000").getcode()
 	print(code)
 	if code == 200:
-		return True, "Demo OK"
+		return True, "OK"
 	else:
-		return False, "ERROR - Demo no responde"
+		return False, "ERROR"
 
 health.add_check(demo_available)
 

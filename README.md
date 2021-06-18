@@ -14,7 +14,6 @@ The flask app also provided a healthcheck status page using the py-healthcheck p
 | WSL2 Ubuntu 20.04 | Python | 3.8.5 |
 
 
-
 ## Run App.py Locally
 
 Clone the project
@@ -100,12 +99,10 @@ Push de la imagen:
 docker push YOUR_ECR_URL.ecr.us-east-1.amazonaws.com/prod/REGISTRY_NAME:GUID
 ```
 
-
 ## Author
 
 - [@jmanzur](https://github.com/JManzur)
 
-  
 ## Documentation
 
 - [Python - Docker Official Images](https://hub.docker.com/_/python)
