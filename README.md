@@ -1,5 +1,4 @@
-
-# Demo Web App using flask
+# Demo Web App using Flask
 
 This simple image deploy a "web app" that show random cats GIF from a list of images declared in the app.py file.
 
